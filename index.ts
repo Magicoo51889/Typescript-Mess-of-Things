@@ -1,13 +1,15 @@
-import * as PromptSync from "prompt-sync";
-const prompt = PromptSync();
+import promptSync from "prompt-sync";
+const prompt = promptSync();
 
-function nameAge(){
-    let name: string = prompt("Enter your name: ")
-    let strAge: string = prompt("Enter your age")
-    let Age: number = parseInt(strAge);
+function workOutPI(){
+    let PI: number = 3.14159265359
+    let radiusStr: string = prompt("What is the radius of your circle? ")
+    let radius: number = parseInt(radiusStr);
 
-    console.log("Hello ${name}, you are ${Age} years old.")
+    let diameter: number = radius * 2
+    let area: number = PI * (radius ** 2)
+
+    let circle = console.log = ("Your circle has a radius of ${radius}, a diameter of ${diameter} and an area of ${area}")
 }
 
-nameAge();
-   
+workOutPI();
