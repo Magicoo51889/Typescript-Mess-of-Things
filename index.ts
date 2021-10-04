@@ -9,7 +9,7 @@ function workOutPI(){
     let diameter: number = radius * 2
     let area: number = PI * (radius ** 2)
 
-    let circle = console.log = ("Your circle has a radius of ${radius}, a diameter of ${diameter} and an area of ${area}")
+    console.log = ("Your circle has a radius of ${radius}, a diameter of ${diameter} and an area of ${area}")
 }
 
 workOutPI();
