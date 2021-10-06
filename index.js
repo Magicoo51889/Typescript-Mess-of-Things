@@ -8,6 +8,6 @@ function workOutPI() {
     var radius = parseInt(radiusStr);
     var diameter = radius * 2;
     var area = PI * (Math.pow(radius, 2));
-    console.log("Your circle has a radius of ${radius}, a diameter of ${diameter} and an area of ${area}");
+    console.log("Your circle has a radius of " + radius + "a diameter of " + diameter + "and an area of " + area);
 }
 workOutPI();
