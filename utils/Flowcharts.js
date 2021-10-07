@@ -4,7 +4,7 @@ exports.flowchart1 = void 0;
 var promptSync = require("prompt-sync");
 var prompt = promptSync();
 function flowchart1() {
-    var botName = "susan";
+    var botName = "Susan";
     var botFrom = 2210;
     var botAge = 20;
     console.log("Hello my name is " + botName + " from space");

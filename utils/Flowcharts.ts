@@ -2,7 +2,7 @@ import * as promptSync from 'prompt-sync'
 const prompt = promptSync();
 
 export function flowchart1() {
-    let botName:string = "susan"
+    let botName:string = "Susan"
     let botFrom:number = 2210
     let botAge:number = 20
 
