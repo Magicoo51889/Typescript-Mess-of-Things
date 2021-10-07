@@ -35,7 +35,7 @@ export function vegetableSelection() {
         }
     } else {
         const isOrange:string = prompt("Is it orange? Y/N ")
-        const isOrangeLower:string = isOrange.toLowerCase():
+        const isOrangeLower:string = isOrange.toLowerCase();
         if (isOrangeLower === "y") {
             console.log("It must be a carrot!")
         } else {
