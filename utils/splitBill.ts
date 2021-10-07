@@ -22,4 +22,3 @@ export function printBill() {
     console.log("The cost per person is " + costPerPerson)
 }
 
-export default printBill;

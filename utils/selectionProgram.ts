@@ -21,4 +21,26 @@ export function animalSelection() {
 
 }
 
-export default animalSelection;
+export function vegetableSelection() {
+    console.log("Pick a vegetable from: Peas, Brocolli, Sweetcorn, Carrot")
+    const isGreen:string = prompt("Is your vegetable green? Y/N ")
+    const isGreenLower:string = isGreen.toLowerCase();
+    if (isGreenLower === "y") {
+        const isTree:string = prompt("Is it tree shaped? Y/N ")
+        const isTreeLower:string = isTree.toLowerCase();
+        if (isTreeLower === "y") {
+            console.log("It must be brocolli!")
+        } else {
+            console.log("It must be peas!")
+        }
+    } else {
+        const isOrange:string = prompt("Is it orange? Y/N ")
+        const isOrangeLower:string = isOrange.toLowerCase():
+        if (isOrangeLower === "y") {
+            console.log("It must be a carrot!")
+        } else {
+            console.log("It must be sweetcorn!")
+        }
+    }
+
+}

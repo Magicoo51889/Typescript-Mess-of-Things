@@ -17,4 +17,3 @@ export function flowchart1() {
     console.log("Wow! By 2210 you would be " + userFutureAge + ". That is really old!")
 } 
 
-export default flowchart1;
