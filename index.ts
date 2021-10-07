@@ -1,6 +1,6 @@
-import { flowchart1 } from "./Flowcharts";
-import { makeSentence } from "./forFirstTask";
-import { workOutPI } from "./piConverter";
+import { flowchart1 } from "./modules/Flowcharts";
+import { makeSentence } from "./modules/forFirstTask";
+import { workOutPI } from "./modules/piConverter";
 
 makeSentence();
 workOutPI();
