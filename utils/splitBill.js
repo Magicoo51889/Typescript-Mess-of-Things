@@ -5,8 +5,8 @@ var promptSync = require("prompt-sync");
 var prompt = promptSync();
 function printBill() {
     console.log("Hi there! I'm going to split the bill for you!");
-    var billInputStr = prompt("How much was the bill?");
-    var numberOfPeopleStr = prompt("How many people are there?");
+    var billInputStr = prompt("How much was the bill? ");
+    var numberOfPeopleStr = prompt("How many people are there? ");
     var tipPercentageStr = prompt("What tip would you like to leave? ");
     var billInput = parseInt(billInputStr);
     var numberOfPeople = parseInt(numberOfPeopleStr);
