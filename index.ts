@@ -9,7 +9,9 @@ import { animalSelection } from "./utils/selectionProgram";
 import { vegetableSelection } from "./utils/selectionProgram";
 import { timesTable } from './utils/timesTable';
 
-let option = prompt("Select program to run: ")
+let optionStr:string = prompt("Select program to run: ")
+let option:string = optionStr.toLowerCase();
+
 
 
 if (option = "makeSentence") {
