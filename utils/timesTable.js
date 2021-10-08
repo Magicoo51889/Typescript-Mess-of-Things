@@ -10,7 +10,7 @@ function timesTable() {
     console.log("Here is the times table for " + which);
     for (var i = 0; i < 13; i++) {
         var result = which * i;
-        console.log(result);
+        console.log(which + " x " + i + " = " + result);
         //need to add the '3 x 3 = 9' bit rather than just '9'
     }
 }
