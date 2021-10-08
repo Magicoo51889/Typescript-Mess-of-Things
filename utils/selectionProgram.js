@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-exports.animalSelection = void 0;
+exports.vegetableSelection = exports.animalSelection = void 0;
 var promptSync = require("prompt-sync");
 var prompt = promptSync();
 function animalSelection() {
@@ -23,4 +23,29 @@ function animalSelection() {
     }
 }
 exports.animalSelection = animalSelection;
-exports["default"] = animalSelection;
+function vegetableSelection() {
+    console.log("Pick a vegetable from: Peas, Brocolli, Sweetcorn, Carrot");
+    var isGreen = prompt("Is your vegetable green? Y/N ");
+    var isGreenLower = isGreen.toLowerCase();
+    if (isGreenLower === "y") {
+        var isTree = prompt("Is it tree shaped? Y/N ");
+        var isTreeLower = isTree.toLowerCase();
+        if (isTreeLower === "y") {
+            console.log("It must be brocolli!");
+        }
+        else {
+            console.log("It must be peas!");
+        }
+    }
+    else {
+        var isOrange = prompt("Is it orange? Y/N ");
+        var isOrangeLower = isOrange.toLowerCase();
+        if (isOrangeLower === "y") {
+            console.log("It must be a carrot!");
+        }
+        else {
+            console.log("It must be sweetcorn!");
+        }
+    }
+}
+exports.vegetableSelection = vegetableSelection;

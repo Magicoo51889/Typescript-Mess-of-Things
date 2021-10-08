@@ -12,4 +12,3 @@ function workOutPI() {
     console.log("Your circle has a radius of " + radius + " a diameter of " + diameter + " and an area of " + area);
 }
 exports.workOutPI = workOutPI;
-exports["default"] = workOutPI;

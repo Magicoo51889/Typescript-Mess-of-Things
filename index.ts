@@ -4,6 +4,7 @@ import { workOutPI } from "./utils/piConverter";
 import { printBill } from "./utils/splitBill";
 import { animalSelection } from "./utils/selectionProgram";
 import { vegetableSelection } from "./utils/selectionProgram";
+import { timesTable } from './utils/timesTable';
 
 makeSentence();
 flowchart1();
@@ -11,3 +12,4 @@ workOutPI();
 printBill();
 animalSelection();
 vegetableSelection();
+timesTable();

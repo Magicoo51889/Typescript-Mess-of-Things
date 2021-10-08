@@ -8,4 +8,3 @@ function makeSentence() {
     console.log("The " + adjective + ", brown " + noun + " " + adverb + " jumped over the lazy dog");
 }
 exports.makeSentence = makeSentence;
-exports["default"] = makeSentence;

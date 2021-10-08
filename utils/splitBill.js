@@ -19,4 +19,3 @@ function printBill() {
     console.log("The cost per person is " + costPerPerson);
 }
 exports.printBill = printBill;
-exports["default"] = printBill;
