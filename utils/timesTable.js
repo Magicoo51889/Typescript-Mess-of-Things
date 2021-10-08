@@ -9,8 +9,9 @@ function timesTable() {
     var which = parseInt(whichStr);
     console.log("Here is the times table for " + which);
     for (var i = 0; i < 13; i++) {
-        var table = which * i;
-        console.log(table);
+        var result = which * i;
+        console.log(result);
+        //need to add the '3 x 3 = 9' bit rather than just '9'
     }
 }
 exports.timesTable = timesTable;

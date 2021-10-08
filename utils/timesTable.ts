@@ -11,6 +11,7 @@ export function timesTable() {
 
     for (let i=0; i<13; i++) {
         let result:number = which * i;
+        console.log(result)
         //need to add the '3 x 3 = 9' bit rather than just '9'
     }
 
