@@ -10,7 +10,6 @@ exports.getRandInt = getRandInt;
 function guesser(getRandInt) {
     var guessStr = prompt("Guess a number between 1 and 10: ");
     var guess = parseInt(guessStr);
-    console.log(getRandInt(1, 10));
     while (guess !== getRandInt(1, 10)) {
         console.log("That is incorrect");
         console.log("Try again... ");

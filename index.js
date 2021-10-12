@@ -10,7 +10,8 @@ var selectionProgram_1 = require("./utils/selectionProgram");
 var timesTable_1 = require("./utils/timesTable");
 var colourLists_1 = require("./utils/colourLists");
 var whileLoop_1 = require("./utils/whileLoop");
-console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays");
+var functionProgram_1 = require("./utils/functionProgram");
+console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays, guesser, functionprogram");
 var optionStr = prompt("Select program to run: ");
 var option = optionStr.toLowerCase();
 if (option === "makesentence") {
@@ -52,6 +53,14 @@ else if (option === "simonsays") {
 else if (option === "guesser") {
     console.log("...Running guesser...");
     (0, whileLoop_1.guesser)(whileLoop_1.getRandInt);
+}
+else if (option === "functionprogram") {
+    console.log("...Running functionProgram...");
+    (0, functionProgram_1.functionProgram)();
+}
+else if (option === "exit") {
+    console.log("...Ending Program...");
+    process.exit(0);
 }
 else {
     console.log("...File not found...");

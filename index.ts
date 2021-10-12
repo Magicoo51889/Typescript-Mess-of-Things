@@ -8,8 +8,10 @@ import { animalSelection, vegetableSelection } from "./utils/selectionProgram";
 import { timesTable } from './utils/timesTable';
 import { rainbowList, simonSays } from './utils/colourLists';
 import { guesser, getRandInt } from './utils/whileLoop';
+import { functionProgram } from './utils/functionProgram'
+import { ExitStatus } from 'typescript';
 
-console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays")
+console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays, guesser, functionprogram")
 let optionStr:string = prompt("Select program to run: ")
 let option:string = optionStr.toLowerCase();
 
@@ -44,6 +46,12 @@ if (option === "makesentence") {
 } else if (option === "guesser") {
     console.log("...Running guesser...")
     guesser(getRandInt);
+} else if (option === "functionprogram") {
+    console.log("...Running functionProgram...")
+    functionProgram();
+} else if (option === "exit") {
+    console.log("...Ending Program...")
+    process.exit(0)
 } else {
     console.log("...File not found...")
 }
