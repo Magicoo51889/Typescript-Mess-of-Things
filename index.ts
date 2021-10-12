@@ -8,10 +8,9 @@ import { animalSelection, vegetableSelection } from "./utils/selectionProgram";
 import { timesTable } from './utils/timesTable';
 import { rainbowList, simonSays } from './utils/colourLists';
 import { guesser, getRandInt } from './utils/whileLoop';
-import { functionProgram } from './utils/functionProgram'
-import { ExitStatus } from 'typescript';
+import { functionProgram, hcfMain } from './utils/functionProgram'
 
-console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays, guesser, functionprogram")
+console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays, guesser, functionprogram, hcfmain")
 let optionStr:string = prompt("Select program to run: ")
 let option:string = optionStr.toLowerCase();
 
@@ -49,12 +48,12 @@ if (option === "makesentence") {
 } else if (option === "functionprogram") {
     console.log("...Running functionProgram...")
     functionProgram();
+} else if (option === "hcfmain") {
+    console.log("...Running hcfMain...")
+    hcfMain();
 } else if (option === "exit") {
     console.log("...Ending Program...")
     process.exit(0)
 } else {
     console.log("...File not found...")
 }
-
-
-

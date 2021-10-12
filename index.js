@@ -11,7 +11,7 @@ var timesTable_1 = require("./utils/timesTable");
 var colourLists_1 = require("./utils/colourLists");
 var whileLoop_1 = require("./utils/whileLoop");
 var functionProgram_1 = require("./utils/functionProgram");
-console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays, guesser, functionprogram");
+console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays, guesser, functionprogram, hcfmain");
 var optionStr = prompt("Select program to run: ");
 var option = optionStr.toLowerCase();
 if (option === "makesentence") {
@@ -57,6 +57,10 @@ else if (option === "guesser") {
 else if (option === "functionprogram") {
     console.log("...Running functionProgram...");
     (0, functionProgram_1.functionProgram)();
+}
+else if (option === "hcfmain") {
+    console.log("...Running hcfMain...");
+    (0, functionProgram_1.hcfMain)();
 }
 else if (option === "exit") {
     console.log("...Ending Program...");
