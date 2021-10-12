@@ -9,7 +9,7 @@ var splitBill_1 = require("./utils/splitBill");
 var selectionProgram_1 = require("./utils/selectionProgram");
 var timesTable_1 = require("./utils/timesTable");
 var colourLists_1 = require("./utils/colourLists");
-console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable");
+console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays");
 var optionStr = prompt("Select program to run: ");
 var option = optionStr.toLowerCase();
 if (option === "makesentence") {
@@ -45,7 +45,7 @@ else if (option === "colourlists") {
     (0, colourLists_1.rainbowList)();
 }
 else if (option === "simonsays") {
-    console.log("...Running simonSays");
+    console.log("...Running simonSays...");
     (0, colourLists_1.simonSays)();
 }
 else {
