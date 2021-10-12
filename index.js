@@ -7,8 +7,8 @@ var Flowcharts_1 = require("./utils/Flowcharts");
 var piConverter_1 = require("./utils/piConverter");
 var splitBill_1 = require("./utils/splitBill");
 var selectionProgram_1 = require("./utils/selectionProgram");
-var selectionProgram_2 = require("./utils/selectionProgram");
 var timesTable_1 = require("./utils/timesTable");
+var colourLists_1 = require("./utils/colourLists");
 console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable");
 var optionStr = prompt("Select program to run: ");
 var option = optionStr.toLowerCase();
@@ -34,11 +34,19 @@ else if (option === "animalselection") {
 }
 else if (option === "vegetableselection") {
     console.log("...Running vegetableSelection");
-    (0, selectionProgram_2.vegetableSelection)();
+    (0, selectionProgram_1.vegetableSelection)();
 }
 else if (option === "timestable") {
     console.log("...Running timesTable...");
     (0, timesTable_1.timesTable)();
+}
+else if (option === "colourlists") {
+    console.log("...Running colourLists...");
+    (0, colourLists_1.rainbowList)();
+}
+else if (option === "simonsays") {
+    console.log("...Running simonSays");
+    (0, colourLists_1.simonSays)();
 }
 else {
     console.log("...File not found...");

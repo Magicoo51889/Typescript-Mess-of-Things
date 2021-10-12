@@ -1,16 +1,14 @@
 import * as promptSync from 'prompt-sync'
 const prompt = promptSync();
-import './utils'
 import { makeSentence } from "./utils/forFirstTask";
 import { flowchart1 } from "./utils/Flowcharts";
 import { workOutPI } from "./utils/piConverter";
 import { printBill } from "./utils/splitBill";
-import { animalSelection } from "./utils/selectionProgram";
-import { vegetableSelection } from "./utils/selectionProgram";
+import { animalSelection, vegetableSelection } from "./utils/selectionProgram";
 import { timesTable } from './utils/timesTable';
-import { rainbowList } from './utils/colourLists';
+import { rainbowList, simonSays } from './utils/colourLists';
 
-console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable")
+console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays")
 let optionStr:string = prompt("Select program to run: ")
 let option:string = optionStr.toLowerCase();
 
@@ -39,6 +37,9 @@ if (option === "makesentence") {
 } else if (option === "colourlists") {
     console.log("...Running colourLists...")
     rainbowList();
+} else if (option === "simonsays") {
+    console.log("...Running simonSays...")
+    simonSays();
 } else {
     console.log("...File not found...")
 }
