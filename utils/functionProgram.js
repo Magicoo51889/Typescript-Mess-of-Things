@@ -10,9 +10,23 @@ function functionProgram() {
             return b;
         }
     }
-    console.log(whichIsLarger(4, 5) == 5, "The test has failed");
-    console.log(whichIsLarger(7, 3) == 7, "The test has failed");
-    console.log(whichIsLarger(1, 8) == 8, "The test has failed");
-    console.log(whichIsLarger(45, 57) == 57, "The test has failed");
+    if (whichIsLarger(4, 5) == 5) {
+        console.log("True");
+    }
+    else {
+        console.log("The test has failed");
+    }
+    console.log(whichIsLarger(7, 3) == 7);
+    console.log(whichIsLarger(1, 8) == 8);
+    console.log(whichIsLarger(45, 57) == 57);
+    function boolLogic(a) {
+        if (a) {
+            console.log("True");
+        }
+        else {
+            console.log("The test has failed");
+        }
+    }
+    boolLogic(whichIsLarger(4, 5) == 5);
 }
 exports.functionProgram = functionProgram;
