@@ -7,6 +7,7 @@ import { printBill } from "./utils/splitBill";
 import { animalSelection, vegetableSelection } from "./utils/selectionProgram";
 import { timesTable } from './utils/timesTable';
 import { rainbowList, simonSays } from './utils/colourLists';
+import { guesser, getRandInt } from './utils/whileLoop';
 
 console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays")
 let optionStr:string = prompt("Select program to run: ")
@@ -40,6 +41,9 @@ if (option === "makesentence") {
 } else if (option === "simonsays") {
     console.log("...Running simonSays...")
     simonSays();
+} else if (option === "guesser") {
+    console.log("...Running guesser...")
+    guesser(getRandInt);
 } else {
     console.log("...File not found...")
 }
