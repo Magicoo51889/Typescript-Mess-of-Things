@@ -7,8 +7,8 @@ function piCalculator() {
     var squarePoints = 0;
     function piCalculation(min, max) {
         for (var i = 0; i < (INTERVAL * INTERVAL); i++) {
-            var rand_x = (Math.random() * (max - min) + min);
-            var rand_y = (Math.random() * (max - min) + min);
+            var rand_x = Math.random() * (max - min) + min;
+            var rand_y = Math.random() * (max - min) + min;
             var originDist = Math.sqrt(rand_x * rand_x + rand_y * rand_y);
             if (originDist <= 1) {
                 circlePoints += 1;
