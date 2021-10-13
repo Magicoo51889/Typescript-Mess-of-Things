@@ -9,6 +9,7 @@ import { timesTable } from './utils/timesTable';
 import { rainbowList, simonSays } from './utils/colourLists';
 import { guesser, getRandInt } from './utils/whileLoop';
 import { functionProgram, hcfMain } from './utils/functionProgram'
+import { piCalculator } from './utils/MCPiCalculation'
 
 console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays, guesser, functionprogram, hcfmain")
 let optionStr:string = prompt("Select program to run: ")
@@ -51,6 +52,9 @@ if (option === "makesentence") {
 } else if (option === "hcfmain") {
     console.log("...Running hcfMain...")
     hcfMain();
+} else if (option === "picalculator") {
+    console.log("...Running Pi calculator...")
+    piCalculator()
 } else if (option === "exit") {
     console.log("...Ending Program...")
     process.exit(0)

@@ -11,6 +11,7 @@ var timesTable_1 = require("./utils/timesTable");
 var colourLists_1 = require("./utils/colourLists");
 var whileLoop_1 = require("./utils/whileLoop");
 var functionProgram_1 = require("./utils/functionProgram");
+var MCPiCalculation_1 = require("./utils/MCPiCalculation");
 console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays, guesser, functionprogram, hcfmain");
 var optionStr = prompt("Select program to run: ");
 var option = optionStr.toLowerCase();
@@ -61,6 +62,10 @@ else if (option === "functionprogram") {
 else if (option === "hcfmain") {
     console.log("...Running hcfMain...");
     (0, functionProgram_1.hcfMain)();
+}
+else if (option === "picalculator") {
+    console.log("...Running Pi calculator...");
+    (0, MCPiCalculation_1.piCalculator)();
 }
 else if (option === "exit") {
     console.log("...Ending Program...");
