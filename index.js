@@ -53,7 +53,7 @@ else if (option === "simonsays") {
 }
 else if (option === "guesser") {
     console.log("...Running guesser...");
-    (0, whileLoop_1.guesser)(whileLoop_1.getRandInt);
+    (0, whileLoop_1.guesser)((0, whileLoop_1.getRandInt)(1, 10));
 }
 else if (option === "functionprogram") {
     console.log("...Running functionProgram...");

@@ -7,7 +7,7 @@ import { printBill } from "./utils/splitBill";
 import { animalSelection, vegetableSelection } from "./utils/selectionProgram";
 import { timesTable } from './utils/timesTable';
 import { rainbowList, simonSays } from './utils/colourLists';
-import { guesser, getRandInt } from './utils/whileLoop';
+import { getRandInt, guesser} from './utils/whileLoop';
 import { functionProgram, hcfMain } from './utils/functionProgram'
 import { piCalculator } from './utils/MCPiCalculation'
 
@@ -45,7 +45,7 @@ if (option === "makesentence") {
     simonSays();
 } else if (option === "guesser") {
     console.log("...Running guesser...")
-    guesser(getRandInt);
+    guesser(getRandInt(1,10));
 } else if (option === "functionprogram") {
     console.log("...Running functionProgram...")
     functionProgram();
