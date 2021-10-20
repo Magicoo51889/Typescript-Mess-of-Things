@@ -1,5 +1,8 @@
+// SETUP
 import * as promptSync from 'prompt-sync'
 const prompt = promptSync();
+
+// NOT OOP
 import { makeSentence } from "./typescript/forFirstTask";
 import { flowchart1 } from "./typescript/Flowcharts";
 import { workOutPI } from "./typescript/piConverter";
@@ -10,6 +13,9 @@ import { rainbowList, simonSays } from './typescript/colourLists';
 import { getRandInt, guesser} from './typescript/whileLoop';
 import { functionProgram, hcfMain } from './typescript/functionProgram'
 import { piCalculator } from './typescript/MCPiCalculation'
+
+// OOP
+import { ksp_man } from "./typescript/OOP/Bank_Acc_Task"
 
 console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays, guesser, functionprogram, hcfmain")
 let optionStr:string = prompt("Select program to run: ")
@@ -54,6 +60,9 @@ if (option === "makesentence") {
 } else if (option === "picalculator") {
     console.log("...Running Pi calculator...")
     piCalculator()
+} else if (option === "ksp_kan") {
+    console.log("...Running Ksp Man...")
+    ksp_man();
 } else if (option === "exit") {
     console.log("...Ending Program...")
     process.exit(0)

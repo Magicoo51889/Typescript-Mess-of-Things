@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Magicoo51889/Typescript-Experimenting#readme",
   "dependencies": {
+    "@types/jquery": "^3.5.8",
     "@types/node": "^16.10.4",
     "@types/prompt-sync": "^4.1.1",
     "prompt-sync": "^4.2.0",
