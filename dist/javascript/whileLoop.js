@@ -18,6 +18,7 @@ function guesser(randomNum) {
         console.log("Try again... ");
         var guessStr_1 = prompt("Guess a number between 1 and 10: ");
         var guess_1 = parseInt(guessStr_1);
+        return guess_1;
     }
     console.log("Whoop! You guessed it correctly!");
 }
