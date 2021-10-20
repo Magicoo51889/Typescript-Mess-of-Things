@@ -15,7 +15,6 @@ console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselect
 let optionStr:string = prompt("Select program to run: ")
 let option:string = optionStr.toLowerCase();
 
-
 if (option === "makesentence") {
     console.log("...Running makeSentence...")
     makeSentence();
