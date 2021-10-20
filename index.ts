@@ -1,15 +1,15 @@
 import * as promptSync from 'prompt-sync'
 const prompt = promptSync();
-import { makeSentence } from "./utils/forFirstTask";
-import { flowchart1 } from "./utils/Flowcharts";
-import { workOutPI } from "./utils/piConverter";
-import { printBill } from "./utils/splitBill";
-import { animalSelection, vegetableSelection } from "./utils/selectionProgram";
-import { timesTable } from './utils/timesTable';
-import { rainbowList, simonSays } from './utils/colourLists';
-import { getRandInt, guesser} from './utils/whileLoop';
-import { functionProgram, hcfMain } from './utils/functionProgram'
-import { piCalculator } from './utils/MCPiCalculation'
+import { makeSentence } from "./typescript/forFirstTask";
+import { flowchart1 } from "./typescript/Flowcharts";
+import { workOutPI } from "./typescript/piConverter";
+import { printBill } from "./typescript/splitBill";
+import { animalSelection, vegetableSelection } from "./typescript/selectionProgram";
+import { timesTable } from './typescript/timesTable';
+import { rainbowList, simonSays } from './typescript/colourLists';
+import { getRandInt, guesser} from './typescript/whileLoop';
+import { functionProgram, hcfMain } from './typescript/functionProgram'
+import { piCalculator } from './typescript/MCPiCalculation'
 
 console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays, guesser, functionprogram, hcfmain")
 let optionStr:string = prompt("Select program to run: ")

@@ -1,2 +1,2 @@
 tsc ./index.ts --outDir ./dist
-node ./index.js
+node ./dist/index.js
