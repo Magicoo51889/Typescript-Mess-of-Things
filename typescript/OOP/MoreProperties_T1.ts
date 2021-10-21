@@ -7,7 +7,7 @@ interface Person {
 const person1: Person = {
     name: "Bob",
     age: 56,
-    profession: "horseracer"
+    profession: "horse racer"
 }
 
 console.log(person1);
@@ -27,4 +27,3 @@ const person3: Person = {
 }
 
 console.log(person3)
-
