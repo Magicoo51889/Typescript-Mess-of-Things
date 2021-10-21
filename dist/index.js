@@ -1,7 +1,9 @@
 "use strict";
 exports.__esModule = true;
+// SETUP
 var promptSync = require("prompt-sync");
 var prompt = promptSync();
+// NOT OOP
 var forFirstTask_1 = require("./typescript/forFirstTask");
 var Flowcharts_1 = require("./typescript/Flowcharts");
 var piConverter_1 = require("./typescript/piConverter");
@@ -12,7 +14,9 @@ var colourLists_1 = require("./typescript/colourLists");
 var whileLoop_1 = require("./typescript/whileLoop");
 var functionProgram_1 = require("./typescript/functionProgram");
 var MCPiCalculation_1 = require("./typescript/MCPiCalculation");
-console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays, guesser, functionprogram, hcfmain");
+// OOP
+var KSPClass_1 = require("./typescript/OOP/KSPClass");
+console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays, guesser, functionprogram, hcfmain, ksp person");
 var optionStr = prompt("Select program to run: ");
 var option = optionStr.toLowerCase();
 if (option === "makesentence") {
@@ -66,6 +70,10 @@ else if (option === "hcfmain") {
 else if (option === "picalculator") {
     console.log("...Running Pi calculator...");
     (0, MCPiCalculation_1.piCalculator)();
+}
+else if (option === "ksp person") {
+    console.log("...Running Ksp Man...");
+    (0, KSPClass_1.ksp_man)();
 }
 else if (option === "exit") {
     console.log("...Ending Program...");

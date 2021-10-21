@@ -15,9 +15,9 @@ import { functionProgram, hcfMain } from './typescript/functionProgram';
 import { piCalculator } from './typescript/MCPiCalculation';
 
 // OOP
-import { ksp_man } from './typescript/OOP/ksp_man_Jeb'
+import { ksp_man } from './typescript/OOP/KSPClass';
 
-console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays, guesser, functionprogram, hcfmain")
+console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays, guesser, functionprogram, hcfmain, ksp person")
 let optionStr:string = prompt("Select program to run: ")
 let option:string = optionStr.toLowerCase();
 
@@ -60,7 +60,7 @@ if (option === "makesentence") {
 } else if (option === "picalculator") {
     console.log("...Running Pi calculator...")
     piCalculator()
-} else if (option === "ksp_kan") {
+} else if (option === "ksp person") {
     console.log("...Running Ksp Man...")
     ksp_man();
 } else if (option === "exit") {
