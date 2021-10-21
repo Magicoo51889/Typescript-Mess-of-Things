@@ -16,35 +16,17 @@ export function ksp_man() {
 
     }
 
-    class Jeb extends ksp_person {
-        talk() {
-            return "Name: " + this.name + ", Age: " + this.age + ", Profession: " + this.profession + ", is BadAss: " + this.badS
-        }
-    }
-
-    class Bill extends ksp_person {
-        talk() {
-            return "Name: " + this.name + ", Age: " + this.age + ", Profession: " + this.profession + ", is BadAss: " + this.badS
-        }
-    }
-
-    class Bob extends ksp_person {
-        talk() {
-            return "Name: " + this.name + ", Age: " + this.age + ", Profession: " + this.profession + ", is BadAss: " + this.badS
-        }
-    }
-
-    class Valentina extends ksp_person {
+    class Kerbonaut extends ksp_person {
         talk() {
             return "Name: " + this.name + ", Age: " + this.age + ", Profession: " + this.profession + ", is BadAss: " + this.badS
         }
     }
 
     const kerbonaut: ksp_person[] = [];
-    kerbonaut.push(new Jeb("Jebediah", 20, "Pilot", true));
-    kerbonaut.push(new Bill("Bill", 21, "Engineer", false));
-    kerbonaut.push(new Bob("Bob", 18, "Scientist", false));
-    kerbonaut.push(new Valentina("Valentina", 23, "Pilot", false))
+    kerbonaut.push(new Kerbonaut("Jebediah", 20, "Pilot", true));
+    kerbonaut.push(new Kerbonaut("Bill", 21, "Engineer", false));
+    kerbonaut.push(new Kerbonaut("Bob", 18, "Scientist", false));
+    kerbonaut.push(new Kerbonaut("Valentina", 23, "Pilot", false))
 
     kerbonaut.forEach(a => {
         console.log(a.talk());
