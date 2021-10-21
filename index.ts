@@ -15,7 +15,7 @@ import { functionProgram, hcfMain } from './typescript/functionProgram'
 import { piCalculator } from './typescript/MCPiCalculation'
 
 // OOP
-import { ksp_man } from "./typescript/OOP/Bank_Acc_Task"
+import { ksp_man } from "./typescript/OOP/ksp_man_Jeb"
 
 console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays, guesser, functionprogram, hcfmain")
 let optionStr:string = prompt("Select program to run: ")
