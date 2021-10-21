@@ -16,8 +16,8 @@ abstract class ksp_man {
 }
 
 class Jeb extends ksp_man {
-    talk(){
+    talk() {
         this.name = "Jebediah"
-        this.age = 
+        this.age = 18
     }
 }
