@@ -11,11 +11,11 @@ import { animalSelection, vegetableSelection } from "./typescript/selectionProgr
 import { timesTable } from './typescript/timesTable';
 import { rainbowList, simonSays } from './typescript/colourLists';
 import { getRandInt, guesser} from './typescript/whileLoop';
-import { functionProgram, hcfMain } from './typescript/functionProgram'
-import { piCalculator } from './typescript/MCPiCalculation'
+import { functionProgram, hcfMain } from './typescript/functionProgram';
+import { piCalculator } from './typescript/MCPiCalculation';
 
 // OOP
-import { ksp_man } from "./typescript/OOP/ksp_man_Jeb"
+import { ksp_man } from './typescript/OOP/ksp_man_Jeb'
 
 console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays, guesser, functionprogram, hcfmain")
 let optionStr:string = prompt("Select program to run: ")
