@@ -26,51 +26,21 @@ function ksp_man() {
         }
         return ksp_person;
     }());
-    var Jeb = /** @class */ (function (_super) {
-        __extends(Jeb, _super);
-        function Jeb() {
+    var Kerbonaut = /** @class */ (function (_super) {
+        __extends(Kerbonaut, _super);
+        function Kerbonaut() {
             return _super !== null && _super.apply(this, arguments) || this;
         }
-        Jeb.prototype.talk = function () {
+        Kerbonaut.prototype.talk = function () {
             return "Name: " + this.name + ", Age: " + this.age + ", Profession: " + this.profession + ", is BadAss: " + this.badS;
         };
-        return Jeb;
-    }(ksp_person));
-    var Bill = /** @class */ (function (_super) {
-        __extends(Bill, _super);
-        function Bill() {
-            return _super !== null && _super.apply(this, arguments) || this;
-        }
-        Bill.prototype.talk = function () {
-            return "Name: " + this.name + ", Age: " + this.age + ", Profession: " + this.profession + ", is BadAss: " + this.badS;
-        };
-        return Bill;
-    }(ksp_person));
-    var Bob = /** @class */ (function (_super) {
-        __extends(Bob, _super);
-        function Bob() {
-            return _super !== null && _super.apply(this, arguments) || this;
-        }
-        Bob.prototype.talk = function () {
-            return "Name: " + this.name + ", Age: " + this.age + ", Profession: " + this.profession + ", is BadAss: " + this.badS;
-        };
-        return Bob;
-    }(ksp_person));
-    var Valentina = /** @class */ (function (_super) {
-        __extends(Valentina, _super);
-        function Valentina() {
-            return _super !== null && _super.apply(this, arguments) || this;
-        }
-        Valentina.prototype.talk = function () {
-            return "Name: " + this.name + ", Age: " + this.age + ", Profession: " + this.profession + ", is BadAss: " + this.badS;
-        };
-        return Valentina;
+        return Kerbonaut;
     }(ksp_person));
     var kerbonaut = [];
-    kerbonaut.push(new Jeb("Jebediah", 20, "Pilot", true));
-    kerbonaut.push(new Bill("Bill", 21, "Engineer", false));
-    kerbonaut.push(new Bob("Bob", 18, "Scientist", false));
-    kerbonaut.push(new Valentina("Valentina", 23, "Pilot", false));
+    kerbonaut.push(new Kerbonaut("Jebediah", 20, "Pilot", true));
+    kerbonaut.push(new Kerbonaut("Bill", 21, "Engineer", false));
+    kerbonaut.push(new Kerbonaut("Bob", 18, "Scientist", false));
+    kerbonaut.push(new Kerbonaut("Valentina", 23, "Pilot", false));
     kerbonaut.forEach(function (a) {
         console.log(a.talk());
     });
