@@ -16,6 +16,7 @@ import { piCalculator } from './typescript/MCPiCalculation';
 
 // OOP
 import { ksp_man } from './typescript/OOP/KSPClass';
+import { properties } from './typescript/OOP/MoreProperties_T1';
 
 console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays, guesser, functionprogram, hcfmain, ksp person")
 let optionStr:string = prompt("Select program to run: ")
@@ -63,6 +64,9 @@ if (option === "makesentence") {
 } else if (option === "ksp person") {
     console.log("...Running Ksp Man...")
     ksp_man();
+} else if (option === "propertiesT1") {
+    console.log("...Running properties")
+    properties();
 } else if (option === "exit") {
     console.log("...Ending Program...")
     process.exit(0)
