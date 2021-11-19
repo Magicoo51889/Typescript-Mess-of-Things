@@ -19,7 +19,6 @@ import { calculateSQRT } from './typescript/calculateSQRT';
 import { ksp_man } from './typescript/OOP/KSPClass';
 import { properties } from './typescript/OOP/MoreProperties_T1';
 
-console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays, guesser, functionprogram, hcfmain, ksp person")
 let optionStr:string = prompt("Select program to run: ")
 let option:string = optionStr.toLowerCase();
 
