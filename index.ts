@@ -13,6 +13,7 @@ import { rainbowList, simonSays } from './typescript/colourLists';
 import { getRandInt, guesser} from './typescript/whileLoop';
 import { functionProgram, hcfMain } from './typescript/functionProgram';
 import { piCalculator } from './typescript/MCPiCalculation';
+import { calculateSQRT } from './typescript/calculateSQRT';
 
 // OOP
 import { ksp_man } from './typescript/OOP/KSPClass';
@@ -64,9 +65,12 @@ if (option === "makesentence") {
 } else if (option === "ksp person") {
     console.log("...Running Ksp Man...")
     ksp_man();
-} else if (option === "propertiesT1") {
-    console.log("...Running properties")
+} else if (option === "propertiest1") {
+    console.log("...Running properties...")
     properties();
+} else if (option === "calculatesqrt") {
+    console.log("...Running calculateSQRT...")
+    calculateSQRT()
 } else if (option === "exit") {
     console.log("...Ending Program...")
     process.exit(0)

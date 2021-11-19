@@ -14,8 +14,10 @@ var colourLists_1 = require("./typescript/colourLists");
 var whileLoop_1 = require("./typescript/whileLoop");
 var functionProgram_1 = require("./typescript/functionProgram");
 var MCPiCalculation_1 = require("./typescript/MCPiCalculation");
+var calculateSQRT_1 = require("./typescript/calculateSQRT");
 // OOP
 var KSPClass_1 = require("./typescript/OOP/KSPClass");
+var MoreProperties_T1_1 = require("./typescript/OOP/MoreProperties_T1");
 console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays, guesser, functionprogram, hcfmain, ksp person");
 var optionStr = prompt("Select program to run: ");
 var option = optionStr.toLowerCase();
@@ -74,6 +76,14 @@ else if (option === "picalculator") {
 else if (option === "ksp person") {
     console.log("...Running Ksp Man...");
     (0, KSPClass_1.ksp_man)();
+}
+else if (option === "propertiest1") {
+    console.log("...Running properties...");
+    (0, MoreProperties_T1_1.properties)();
+}
+else if (option === "calculatesqrt") {
+    console.log("...Running calculateSQRT...");
+    (0, calculateSQRT_1.calculateSQRT)();
 }
 else if (option === "exit") {
     console.log("...Ending Program...");
