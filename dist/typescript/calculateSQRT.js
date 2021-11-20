@@ -8,8 +8,8 @@ function calculateSQRT() {
     var input = parseInt(inputStr);
     var LB1 = input - 1;
     var UB1 = input + 1;
-    var esitmate = ((UB1 * UB1) * 0.32379) + ((LB1 * LB1) * 0.67621) / 2;
-    var guess = esitmate / (input * 2);
-    console.log(guess);
+    var estimate = input * (1 / 3);
+    var estimate1 = (Math.min(estimate) + 1 / 3) / 2;
+    console.log(estimate1);
 }
 exports.calculateSQRT = calculateSQRT;

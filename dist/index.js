@@ -18,7 +18,6 @@ var calculateSQRT_1 = require("./typescript/calculateSQRT");
 // OOP
 var KSPClass_1 = require("./typescript/OOP/KSPClass");
 var MoreProperties_T1_1 = require("./typescript/OOP/MoreProperties_T1");
-console.log("Options: makesentece; flowchart; workoutpi; printbill; animlaselection; vegetableselection; timestable; colourlists; simonsays, guesser, functionprogram, hcfmain, ksp person");
 var optionStr = prompt("Select program to run: ");
 var option = optionStr.toLowerCase();
 if (option === "makesentence") {
