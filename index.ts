@@ -3,17 +3,17 @@ import * as promptSync from 'prompt-sync'
 const prompt = promptSync();
 
 // NOT OOP
-import { makeSentence } from "./typescript/forFirstTask";
-import { flowchart1 } from "./typescript/Flowcharts";
-import { workOutPI } from "./typescript/piConverter";
-import { printBill } from "./typescript/splitBill";
-import { animalSelection, vegetableSelection } from "./typescript/selectionProgram";
-import { timesTable } from './typescript/timesTable';
-import { rainbowList, simonSays } from './typescript/colourLists';
-import { getRandInt, guesser} from './typescript/whileLoop';
-import { functionProgram, hcfMain } from './typescript/functionProgram';
-import { piCalculator } from './typescript/MCPiCalculation';
-import { findSqrt } from './typescript/calculateSQRT';
+import { makeSentence } from "./typescript/NOOP/forFirstTask";
+import { flowchart1 } from "./typescript/NOOP/Flowcharts";
+import { workOutPI } from "./typescript/NOOP/piConverter";
+import { printBill } from "./typescript/NOOP/splitBill";
+import { animalSelection, vegetableSelection } from "./typescript/NOOP/selectionProgram";
+import { timesTable } from './typescript/NOOP/timesTable';
+import { rainbowList, simonSays } from './typescript/NOOP/colourLists';
+import { getRandInt, guesser} from './typescript/NOOP/whileLoop';
+import { functionProgram, hcfMain } from './typescript/NOOP/functionProgram';
+import { piCalculator } from './typescript/NOOP/MCPiCalculation';
+import { findSqrt } from './typescript/NOOP/calculateSQRT';
 
 // OOP
 import { ksp_man } from './typescript/OOP/KSPClass';
