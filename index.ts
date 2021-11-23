@@ -13,7 +13,7 @@ import { rainbowList, simonSays } from './typescript/colourLists';
 import { getRandInt, guesser} from './typescript/whileLoop';
 import { functionProgram, hcfMain } from './typescript/functionProgram';
 import { piCalculator } from './typescript/MCPiCalculation';
-import { calculateSQRT } from './typescript/calculateSQRT';
+import { findSqrt } from './typescript/calculateSQRT';
 
 // OOP
 import { ksp_man } from './typescript/OOP/KSPClass';
@@ -22,6 +22,7 @@ import { properties } from './typescript/OOP/MoreProperties_T1';
 let optionStr:string = prompt("Select program to run: ")
 let option:string = optionStr.toLowerCase();
 
+// THE FUNCTIONS
 if (option === "makesentence") {
     console.log("...Running makeSentence...")
     makeSentence();
@@ -69,7 +70,7 @@ if (option === "makesentence") {
     properties();
 } else if (option === "calculatesqrt") {
     console.log("...Running calculateSQRT...")
-    calculateSQRT()
+    findSqrt(prompt("What do you want to sqrt? "))
 } else if (option === "exit") {
     console.log("...Ending Program...")
     process.exit(0)
