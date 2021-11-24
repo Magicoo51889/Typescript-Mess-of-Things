@@ -19,6 +19,9 @@ import { findSqrt } from './typescript/NOOP/calculateSQRT';
 import { ksp_man } from './typescript/OOP/KSPClass';
 import { properties } from './typescript/OOP/MoreProperties_T1';
 
+// ALGORITHMS
+
+
 let optionStr:string = prompt("Select program to run: ")
 let option:string = optionStr.toLowerCase();
 
